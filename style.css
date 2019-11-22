@@ -1,0 +1,81 @@
+body {
+	width: 100vw;
+	height: 100%;
+	font: 'Raleway', sans-serif;
+	color: rgba(0,0,0,.5);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	top: 15%;
+	/*current bg before you select your desired color*/
+	/*syntax (direction, color, color, color, color)*/
+	background: linear-gradient(to right, #ff0000, #efd200);
+}
+
+h1 {
+	font: 600 2.5em 'Raleway', sans-serif;
+	color: rgba(0,0,0,.5);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	width: 100%;
+}
+
+h3 {
+	font: 900 1em 'Raleway', sans-serif;
+	color: rgba(0,0,0,.5);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .01em;
+}
+
+h4 {
+	font: 900 1em 'Raleway', sans-serif;
+	color: rgba(0,0,0,.5);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .01em;
+}
+
+
+.arrow {
+	width: 0;
+  height: 0;
+  border: solid black;
+  padding: 3px;
+  background-color: rgba(0,0,0,0.0);
+  margin-bottom: 20px;
+	display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  text-indent: -9999px;
+  border-width: 0 15px 15px 0;
+  transition: all 250ms ease-in-out;
+  text-decoration: none;
+  color: transparent;
+  border-color: lightgray;
+}
+
+.arrow:hover {
+	border-width: 0 10px 10px 0;
+  border-color: gray;
+}
+
+.arrow:before {
+  display: block;
+  height: 200%;
+  width: 200%;
+  margin-left: -50%;
+  margin-top: -50%;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.arrow.up {
+  transform: rotate(45deg);
+  left: 0;
+}
+
+
+

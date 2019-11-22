@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gradient Background</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body id="gradient">
+		<h1>Background Generator</h1>
+		<!-- added this to select colors -->
+		<!-- we could also use oninput=""
+		to set our background instead of listener 
+		remember to call the function-->
+		<!-- one thing to note about color values in HTML,
+		rgb(0,0,0) won't work it only allows #rrggbb values -->
+		<input oninput="setGradient()" class="color1" type="color" name="color1" value="#ff0000">
+		<!-- adding javascript to html also we can only add setGradient so this input can only
+		have one attribute -->
+		<input oninput="setGradient()" class="color2" type="color" name="color2" value="#efd200">
+		<!-- whenever you select a color it will show code here -->
+		<h2>Current CSS Background</h2>
+		<!-- onclick="colorGen()" -->
+		<a href="#"class="arrow up"></a>
+		<h3></h3>
+		<h4></h4>
+		
+		<!--our javascript file -->
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
